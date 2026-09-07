@@ -13,3 +13,4 @@ public class Homework1{
   }
 }
 ```
+<img width="116" height="229" alt="Image" src="https://github.com/user-attachments/assets/59b9489f-2626-410e-aa08-824cc116ebf9" />
