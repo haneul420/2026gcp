@@ -70,3 +70,23 @@ public class Homework1{
 
 <img width="120" height="227" alt="Image" src="https://github.com/user-attachments/assets/8370d7ea-1747-40b1-973e-2547f380b749" />
 
+## homewrok2
+```
+public class homework2 {
+    public static void main(String[]args) {
+        int[] fibonacci = new int[20];
+        fibonacci[0] = 1;
+        fibonacci[1] = 1;
+
+        for (int i = 2; i < 20; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+        }
+        for (int i = 0; i < 20; i++) {
+            System.out.print(fibonacci[i] + " ");
+        }
+    }
+}
+```
+
+<img width="419" height="46" alt="Image" src="https://github.com/user-attachments/assets/eb304e99-b79c-4405-95c2-63663d103fda" />
+
