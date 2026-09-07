@@ -90,3 +90,5 @@ public class homework2 {
 
 <img width="419" height="46" alt="Image" src="https://github.com/user-attachments/assets/eb304e99-b79c-4405-95c2-63663d103fda" />
 
+## homework3
+```
