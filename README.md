@@ -2,7 +2,7 @@
 ## homework1
 ```
 public class Homework1{
-  public static void main(String []args){
+  public static void homework1(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<=i; j++) {
@@ -18,7 +18,7 @@ public class Homework1{
 
 ```
 public class Homework1{
-  public static void main(String []args){
+  public static void homework1(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<10-i; j++) {
@@ -34,7 +34,7 @@ public class Homework1{
 
 ```
 public class Homework1{
-  public static void main(String []args){
+  public static void homework1(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<10-i; j++) {
@@ -53,7 +53,7 @@ public class Homework1{
 
 ```
 public class Homework1{
-  public static void main(String []args){
+  public static void homework1(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<i; j++) {
@@ -72,8 +72,8 @@ public class Homework1{
 
 ## homewrok2
 ```
-public class homework2 {
-    public static void main(String[]args) {
+public class Homework2 {
+    public static void homework2(String[]args) {
         int[] fibonacci = new int[20];
         fibonacci[0] = 1;
         fibonacci[1] = 1;
@@ -92,8 +92,8 @@ public class homework2 {
 
 ## homework3
 ```
-public class Main {
-  public static void main(String[] args) {
+public class Homework3 {
+  public static void homework3(String[] args) {
     int a = 1;
     int b = 1;
     for(int i = 1; i <= 20; i++) {
