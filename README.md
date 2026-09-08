@@ -92,3 +92,18 @@ public class homework2 {
 
 ## homework3
 ```
+public class Main {
+  public static void main(String[] args) {
+    int a = 1;
+    int b = 1;
+    for(int i = 1; i <= 20; i++) {
+    int plus = a + b;
+    
+    System.out.printf("%d/%d = %.3f%n",plus,b , (double)plus/b);
+    a = b;
+    b = plus;
+    }
+  }
+}
+```
+<img width="186" height="389" alt="Image" src="https://github.com/user-attachments/assets/637037ec-30bc-4f03-aeb5-b85660f17096" />
