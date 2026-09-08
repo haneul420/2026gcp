@@ -2,7 +2,7 @@
 ## homework1
 ```
 public class Homework1{
-  public static void homework1(String []args){
+  public static void main(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<=i; j++) {
@@ -18,7 +18,7 @@ public class Homework1{
 
 ```
 public class Homework1{
-  public static void homework1(String []args){
+  public static void main(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<10-i; j++) {
@@ -34,7 +34,7 @@ public class Homework1{
 
 ```
 public class Homework1{
-  public static void homework1(String []args){
+  public static void main(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<10-i; j++) {
@@ -53,7 +53,7 @@ public class Homework1{
 
 ```
 public class Homework1{
-  public static void homework1(String []args){
+  public static void main(String []args){
     int i, j;
     for(i=0; i<10; i++) {
       for(j=0; j<i; j++) {
@@ -73,7 +73,7 @@ public class Homework1{
 ## homewrok2
 ```
 public class Homework2 {
-    public static void homework2(String[]args) {
+    public static void main(String[]args) {
         int[] fibonacci = new int[20];
         fibonacci[0] = 1;
         fibonacci[1] = 1;
@@ -93,7 +93,7 @@ public class Homework2 {
 ## homework3
 ```
 public class Homework3 {
-  public static void homework3(String[] args) {
+  public static void main(String[] args) {
     int a = 1;
     int b = 1;
     for(int i = 1; i <= 20; i++) {
@@ -107,3 +107,18 @@ public class Homework3 {
 }
 ```
 <img width="186" height="389" alt="Image" src="https://github.com/user-attachments/assets/637037ec-30bc-4f03-aeb5-b85660f17096" />
+
+## homework4
+```
+public class homework4 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 9; i++) {
+            for (int j = 1; j <= 9; j++) {
+                System.out.println(i + "*" + j + "=" + (i * j));
+            }
+            System.out.println();
+        }
+    }
+}
+```
+<img width="66" height="206" alt="Image" src="https://github.com/user-attachments/assets/d357ae86-1ac8-40e6-81ec-69cdf55c7b7b" /> <img width="67" height="200" alt="Image" src="https://github.com/user-attachments/assets/b134c194-198b-4742-b988-a2f80f2f6ed5" /> <img width="70" height="195" alt="Image" src="https://github.com/user-attachments/assets/a81e9a69-54cd-4aa4-92fa-12f9d34b5b91" />
