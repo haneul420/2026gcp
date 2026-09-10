@@ -122,3 +122,23 @@ public class homework4 {
 }
 ```
 <img width="66" height="206" alt="Image" src="https://github.com/user-attachments/assets/d357ae86-1ac8-40e6-81ec-69cdf55c7b7b" /> <img width="67" height="200" alt="Image" src="https://github.com/user-attachments/assets/b134c194-198b-4742-b988-a2f80f2f6ed5" /> <img width="70" height="195" alt="Image" src="https://github.com/user-attachments/assets/a81e9a69-54cd-4aa4-92fa-12f9d34b5b91" />
+
+## homework 5
+```
+public class homework5 {
+    public static void main(String[] args) {
+        int i, replay = 1000;
+
+        System.out.print("π = ");
+        for (i = 0; i < replay; i++) {
+            System.out.print("4/" + (2 * i + 1));
+            if (i < replay - 1) {
+                System.out.print(i % 2 == 0 ? " - " : " + ");
+            }
+        }
+        System.out.println(" - ...");
+    }
+}
+```
+
+<img width="423" height="231" alt="Image" src="https://github.com/user-attachments/assets/4685895b-66b5-4b78-8df1-11b3f6d5db35" />
