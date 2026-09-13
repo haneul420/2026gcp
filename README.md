@@ -142,3 +142,29 @@ public class homework5 {
 ```
 
 <img width="423" height="231" alt="Image" src="https://github.com/user-attachments/assets/4685895b-66b5-4b78-8df1-11b3f6d5db35" />
+
+```
+public class homework5 {
+    public static void main(String[] args) {
+        int i, terms = 10;
+        double sum = 1.0, term;
+        for (i = 1; i < terms; i++) {
+            term = 1.0 / ((2 * i + 1) * Math.pow(3, i));
+            if (i % 2 == 1) {
+                sum -= term;
+            } else {
+                sum += term;
+            }
+        }
+        
+        double pi = Math.sqrt(12) * sum;
+        System.out.print("π = Math.sqrt(12) * (1");
+        for (i = 1; i < terms; i++) {
+            System.out.print(i % 2 == 1 ? " - " : " + ");
+            System.out.print("1/(" + (2 * i + 1) + " * Math.pow(3, " + i + "))");
+        }
+        System.out.println(" - ...)");
+    }
+}
+```
+<img width="414" height="142" alt="Image" src="https://github.com/user-attachments/assets/cb05eeb4-2392-4e5e-9219-75adc0d1e8d9" />
