@@ -168,7 +168,9 @@ public class homework5 {
 }
 ```
 <img width="414" height="142" alt="Image" src="https://github.com/user-attachments/assets/cb05eeb4-2392-4e5e-9219-75adc0d1e8d9" />
+
 ## homework6
+
 ```
  public class homework6 {
     public static void main(String[] args) {
@@ -190,4 +192,5 @@ public class homework5 {
     }
     }
 ```
+
 <img width="164" height="167" alt="Image" src="https://github.com/user-attachments/assets/1487dd4f-349a-4d85-a818-d96344ffa8bd" />
