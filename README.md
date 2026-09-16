@@ -168,3 +168,26 @@ public class homework5 {
 }
 ```
 <img width="414" height="142" alt="Image" src="https://github.com/user-attachments/assets/cb05eeb4-2392-4e5e-9219-75adc0d1e8d9" />
+## homework6
+```
+ public class homework6 {
+    public static void main(String[] args) {
+        int n = 7; 
+        int[][] binomial = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j <= i; j++) {
+                if (j == 0 || j == i) {
+                    binomial[i][j] = 1;
+                } else {
+                
+                    binomial[i][j] = binomial[i - 1][j - 1] + binomial[i - 1][j];
+                }
+               System.out.print(binomial[i][j] + " ");
+            }
+            System.out.println(); 
+        }
+    }
+    }
+```
+<img width="164" height="167" alt="Image" src="https://github.com/user-attachments/assets/1487dd4f-349a-4d85-a818-d96344ffa8bd" />
