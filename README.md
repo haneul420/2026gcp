@@ -194,3 +194,34 @@ public class homework5 {
 ```
 
 <img width="164" height="167" alt="Image" src="https://github.com/user-attachments/assets/1487dd4f-349a-4d85-a818-d96344ffa8bd" />
+
+### homework8
+
+```
+public class ScoreTableTest {
+    public static void main(String[] args) {
+        int[][] score = new int[30][6];
+
+        for (int i = 0; i < 30; i++) {
+            score[i][0] = i + 1; 
+            
+            int sum = 0;
+            for (int j = 1; j <= 4; j++) {
+                score[i][j] = (int)(Math.random() * 101); 
+                sum += score[i][j];
+            }
+            score[i][5] = sum; 
+        }
+
+        for (int i = 0; i < 30; i++) {
+            for (int j = 0; j < 6; j++) {
+                System.out.print(score[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
+}
+
+```
+
+<img width="206" height="602" alt="Image" src="https://github.com/user-attachments/assets/ef8bfa0c-3b39-4c74-982f-e3287b91c511" />
