@@ -195,6 +195,40 @@ public class homework5 {
 
 <img width="164" height="167" alt="Image" src="https://github.com/user-attachments/assets/1487dd4f-349a-4d85-a818-d96344ffa8bd" />
 
+## homework7
+
+```
+public class homework7 {
+    public static void main(String[] args) {
+        int data[] = new int[20];
+        
+        for(int i = 0; i < 20; i++) {
+            data[i] = (int)(Math.random() * 100);
+        }
+    
+        for(int i = 0; i < data.length - 1; i++) {
+            int minIndex = i;
+            
+            for(int j = i + 1; j < data.length; j++) {
+                if(data[j] < data[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            
+            int temp = data[i];
+            data[i] = data[minIndex];
+            data[minIndex] = temp;
+        }
+        for(int i = 0; i < 20; i++) {
+            System.out.print(data[i]+" ");
+        }
+    }
+}
+```
+
+<img width="468" height="27" alt="Image" src="https://github.com/user-attachments/assets/58d853d4-4cbd-4368-8738-869365fedc67" />
+
+
 ### homework8
 
 ```
