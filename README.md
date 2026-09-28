@@ -297,3 +297,60 @@ public class main {
 
 ```
 
+<img width="985" height="25" alt="Image" src="https://github.com/user-attachments/assets/2b6d0201-27c3-455f-b51b-5eced6059ba5" />
+
+## homework 11
+
+```
+public class main {
+    public static void main(String[] args) {
+        int array_count, max_value, bin_size, display_scale, hist_size;
+        if (args.length != 4) {
+            return;
+        }
+        array_count = Integer.parseInt(args[0]);
+        max_value = Integer.parseInt(args[1]);
+        bin_size = Integer.parseInt(args[2]);
+        display_scale = Integer.parseInt(args[3]);
+        hist_size = max_value / bin_size;
+
+        int[] arr = new int[array_count];
+        int[] hist = new int[hist_size];
+
+        for (int i = 0; i < array_count; i++) {
+            arr[i] = (int) (Math.random() * max_value);
+        }
+        
+        for (int i = 0; i < array_count; i++) {
+            System.out.print(arr[i] + " ");  
+        }
+        System.out.println();  
+
+  
+        for (int i = 0; i < array_count; i++) {
+            int index = arr[i] / bin_size;
+            if (index >= hist_size) index = hist_size - 1;
+            hist[index]++;
+        }
+        
+        for (int i = 0; i < hist_size; i++) {
+            System.out.print(hist[i] + " ");  
+        }
+        System.out.println();  
+        double sum = 0;
+        for (int i = 0; i < array_count; i++) {
+            sum += arr[i];
+        }
+        System.out.printf("arithmetic mean : = %f\n", sum / array_count);
+
+        double prod = 1;
+        for (int i = 0; i < array_count; i++) {
+            prod *= arr[i];
+        }
+        System.out.printf("harmonic mean : = %f\n", Math.pow(prod, (double) 1. / array_count));
+    }
+}
+
+```
+
+<img width="980" height="55" alt="Image" src="https://github.com/user-attachments/assets/6a1debe9-c172-4f0f-bb1f-054e6193d6a6" />
