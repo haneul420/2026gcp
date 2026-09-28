@@ -259,3 +259,41 @@ public class ScoreTableTest {
 ```
 
 <img width="206" height="602" alt="Image" src="https://github.com/user-attachments/assets/ef8bfa0c-3b39-4c74-982f-e3287b91c511" />
+
+## homework 10
+
+```
+public class main {
+	public static void main(String[] args) {
+		int array_count, max_value, bin_size, display_scale, hist_size;
+			if(args.length !=4)
+				return;
+			array_count = Integer.parseInt(args[0]);
+			max_value = Integer.parseInt(args[1]);
+			bin_size = Integer.parseInt(args[2]);
+			display_scale = Integer.parseInt(args[3]);
+			hist_size = max_value/bin_size;
+			
+			int[] arr = new int[array_count];
+			int[] hist = new int[hist_size];
+			for (int i=0; i<array_count; i++) {
+				arr[i] = (int) (Math.random()*max_value);
+			}
+			for (int i=0; i<array_count; i++) {
+				System.out.print(arr[i] + " ");  
+			}
+			System.out.println();  
+			
+			for (int i=0; i<array_count; i++) {
+				hist[arr[i]/bin_size]++;
+			}
+			for (int i=0; i<hist_size; i++) {
+				System.out.print(hist[i] + " ");  
+			}
+			System.out.println();  
+
+ }
+}
+
+```
+
