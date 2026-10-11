@@ -354,3 +354,39 @@ public class main {
 ```
 
 <img width="980" height="55" alt="Image" src="https://github.com/user-attachments/assets/6a1debe9-c172-4f0f-bb1f-054e6193d6a6" />
+
+
+** homework 13
+
+```
+
+import java.util.Scanner;
+
+public class miniCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            String input = scanner.nextLine();
+            if (input.equals("exit")) break;
+            
+            String[] s = input.split(" ");
+            double res = Double.parseDouble(s[0]);
+            
+            for (int i = 1; i < s.length; i += 2) {
+                double n = Double.parseDouble(s[i + 1]);
+                res = switch (s[i]) {
+                    case "+" -> res + n;
+                    case "-" -> res - n;
+                    case "*", "#" -> res * n;
+                    case "/" -> res / n;
+                    default -> res;
+                };
+            }
+            System.out.println("결과: " + res);
+        }
+    }
+}
+
+```
+
+<img width="153" height="169" alt="Image" src="https://github.com/user-attachments/assets/d9cb833c-29da-4ec0-bcc1-b907fe0d2dec" />
