@@ -390,3 +390,76 @@ public class miniCalculator {
 ```
 
 <img width="153" height="169" alt="Image" src="https://github.com/user-attachments/assets/d9cb833c-29da-4ec0-bcc1-b907fe0d2dec" />
+
+## homework 14
+
+```
+
+import java.util.Arrays;
+
+class Numbers {
+    int[] num;
+    Numbers(int[] num) { this.num = num; }
+
+    double getArithmaticMean() {
+        double sum = 0;
+        for (int n : num) sum += n;
+        return sum / num.length;
+    }
+
+    double getHarmonicMean() {
+        double sum = 0;
+        for (int n : num) sum += 1.0 / n;
+        return num.length / sum;
+    }
+
+    double getGeometricMean() {
+        double logSum = 0;
+        for (int n : num) logSum += Math.log(n);
+        return Math.exp(logSum / num.length);
+    }
+
+    int getMedian() {
+        int[] t = num.clone();
+        Arrays.sort(t);
+        return t[t.length / 2];
+    }
+
+    void sorting() { Arrays.sort(num); }
+
+    void drawHistogram(int start, int end, int binCount, int scale) {
+        int binSize = (end - start) / binCount;
+        int[] hist = new int[binCount];
+        for (int n : num) hist[Math.min((n - start) / binSize, binCount - 1)]++;
+
+        for (int i = 0; i < binCount; i++) {
+            System.out.printf("%2d~%2d \t\t", start + i * binSize, start + (i + 1) * binSize - 1);
+            for (int j = 0; j < hist[i] / scale; j++) System.out.print("#");
+            System.out.println();
+        }
+    }
+
+    void display() {
+        System.out.println("개수: " + num.length);
+    }
+}
+
+public class NumbersTest {
+    public static void main(String[] args) {
+        int[] data = new int[100];
+        for (int i = 0; i < 100; i++) data[i] = (int)(Math.random() * 99 + 1); // 0 제외
+
+        Numbers obj = new Numbers(data);
+        obj.display();
+        System.out.printf("산술평균: %.2f\n", obj.getArithmaticMean());
+        System.out.printf("기하평균: %.2f\n", obj.getGeometricMean());
+        System.out.printf("조화평균: %.2f\n", obj.getHarmonicMean());
+        System.out.printf("중앙값: %d\n\n[히스토그램]\n", obj.getMedian());
+        
+        obj.drawHistogram(0, 100, 10, 1);
+    }
+}
+
+```
+
+<img width="221" height="360" alt="Image" src="https://github.com/user-attachments/assets/631fc8ac-b528-4ab3-8778-3ad8301cf56e" />
